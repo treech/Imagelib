@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.rcs.beautifylib.mosaic.DrawMosaicView
+            android:id="@+id/mosaic_draw_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <SeekBar
+            android:id="@+id/mosaic_paint_size_sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:max="20"
+            android:progress="5"
+            android:thumb="@drawable/camerasdk_icon_seek_thumb"
+            />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mosaic_paint_base"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/camerasdk_mosaic_base"
+            android:textColor="@color/camerasdk_text_red"/>
+
+        <TextView
+            android:id="@+id/mosaic_paint_glass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/camerasdk_mosaic_glass"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/mosaic_paint_flower"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/camerasdk_mosaic_flower"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/mosaic_paint_eraser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/camerasdk_mosaic_eraser"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
